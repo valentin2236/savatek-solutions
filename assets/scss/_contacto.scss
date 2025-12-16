@@ -1,0 +1,46 @@
+.svk-map-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: $radius-lg;
+  border: 1px solid $svk-border-soft;
+  box-shadow: $shadow-soft;
+}
+
+/* Relación de aspecto tipo 16:9 */
+.svk-map-wrapper::before {
+  content: "";
+  display: block;
+  padding-top: 56.25%; // 16/9
+}
+
+.svk-map-wrapper iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+
+/* Mini-cards de contacto */
+.svk-contact-mini {
+  transition: all 0.25s ease;
+  border: 1px solid $svk-border-soft;
+
+  &:hover {
+    border-color: $svk-accent;
+    box-shadow: 0 0 12px rgba(34, 197, 94, 0.25);
+    transform: translateY(-3px);
+  }
+}
+
+/* Evita overflow por textos largos (email/links) */
+.min-w-0 { min-width: 0; }
+.svk-contact-mini a,
+.svk-contact-mini p {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}

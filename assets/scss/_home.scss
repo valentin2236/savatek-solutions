@@ -1,0 +1,70 @@
+.svk-hero {
+  min-height: calc(100vh - 72px);
+  padding: 4rem 0 3rem;
+}
+
+.svk-label {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.svk-hero-title {
+  font-size: clamp(2.3rem, 4vw, 3rem);
+  line-height: 1.1;
+}
+
+.svk-hero-subtitle {
+  color: $svk-muted;
+  max-width: 36rem;
+}
+
+.svk-hero-img {
+  max-width: 550px;
+  border-radius: $radius-lg;
+  box-shadow: $shadow-soft;
+}
+
+
+.svk-avatar-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-image: url("../img/avatar/Avatar-VA.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.45);
+}
+
+
+.svk-logo-hero {
+  max-width: 280px;
+  border-radius: 10%;
+  opacity: 0.9;
+  filter: drop-shadow(0 0 12px rgba(0, 255, 150, 0.15));
+  transition: 0.3s ease;
+
+  &:hover {
+    transform: scale(1.04);
+    opacity: 1;
+  }
+}
+
+
+
+.svk-hero {
+  min-height: calc(100vh - 72px);
+  padding: 4rem 0 3rem;
+  overflow-x: hidden; // por si alguna sombra o efecto se pasa un poquito
+}
+
+.svk-hero-img {
+  max-width: 550px;
+  width: 100%;     // esto es clave para mobile
+  height: auto;
+  border-radius: $radius-lg;
+  box-shadow: $shadow-soft;
+  display: block;
+}

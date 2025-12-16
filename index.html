@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- SEO básico -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SavateK Solutions — Desarrollo Web & Soluciones Digitales</title>
+    <meta
+      name="description"
+      content="SavateK Solutions: diseño y desarrollo de sitios web, tiendas online y soluciones digitales a medida para emprendedores y negocios."
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/logo/logochiquito.png" type="image/png" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="SavateK Solutions — Soluciones digitales"
+    />
+    <meta
+      property="og:description"
+      content="Desarrollo web, ecommerce y sistemas personalizados para tu marca."
+    />
+    <meta property="og:image" content="assets/img/og-cover.jpg" />
+    <meta
+      property="og:url"
+      content="https://TU-USUARIO.github.io/savatek-solutions/"
+    />
+
+    <!-- Autor -->
+    <meta name="author" content="Valentín Arriola" />
+    <meta name="theme-color" content="#050814" />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
+    <!-- Estilos propios (SASS compilado) -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body class="svk-body">
+    <!-- HEADER -->
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-dark svk-navbar sticky-top"
+        aria-label="Navegación principal"
+      >
+        <div class="container">
+          <a
+            class="navbar-brand d-flex align-items-center gap-2"
+            href="index.html"
+          >
+            <img
+              src="assets/img/logo/logochiquito.png"
+              alt="Logo de SavateK Solutions"
+              width="36"
+              height="36"
+            />
+            <span class="fw-semibold"
+              >SavateK <span class="text-accent">Solutions</span></span
+            >
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNavbar"
+            aria-controls="mainNavbar"
+            aria-expanded="false"
+            aria-label="Alternar navegación"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 svk-nav-links">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/planes.html">Planes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-accent ms-lg-3" href="contacto.html">
+                  Pedir presupuesto
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main id="top">
+      <!-- HERO -->
+      <section
+        class="svk-hero d-flex align-items-center"
+        aria-label="Sección principal"
+      >
+        <div class="container">
+          <div class="row align-items-center">
+            <div
+              class="col-lg-6 mb-4 mb-lg-0"
+              data-aos="fade-right"
+              data-aos-duration="900"
+            >
+              <p class="svk-label text-accent mb-2">
+                Desarrollo Web & Soluciones Digitales
+              </p>
+              <h1 class="svk-hero-title mb-3">
+                Potenciamos tu marca<br />
+                con presencia digital profesional
+              </h1>
+              <p class="svk-hero-subtitle mb-4">
+                Sitios web rápidos, modernos y pensados para convertir visitas
+                en clientes. Tiendas online, landings, portfolios y sistemas a
+                medida para emprendimientos y negocios.
+              </p>
+              <div class="d-flex flex-wrap gap-3">
+                <a href="servicios.html" class="btn btn-accent btn-lg">
+                  Ver servicios
+                </a>
+                <a href="portfolio.html" class="btn btn-outline-light btn-lg">
+                  Ver proyectos
+                </a>
+              </div>
+              <p class="svk-small mt-3">
+                • Diseño responsive • Optimización SEO básica • Integración con
+                redes y WhatsApp
+              </p>
+            </div>
+
+            <div
+              class="col-lg-6 text-center"
+              data-aos="fade-left"
+              data-aos-duration="900"
+            >
+              <img
+                src="assets/img/hero/hero-large.jpg"
+                alt="Desarrollador trabajando frente a varias pantallas en un entorno profesional"
+                class="svk-hero-img img-fluid"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECCIÓN: SERVICIOS PRINCIPALES -->
+      <section class="py-5 svk-section" aria-label="Servicios principales">
+        <div class="container">
+          <header class="text-center mb-5">
+            <h2 class="svk-section-title">¿Qué hacemos en SavateK?</h2>
+            <p class="svk-section-subtitle">
+              Te acompañamos en todo el proceso: desde la idea hasta el
+              lanzamiento de tu sitio.
+            </p>
+          </header>
+
+          <div class="row g-4">
+            <article class="col-md-4" data-aos="zoom-in" data-aos-delay="0">
+              <div class="svk-card h-100">
+                <h3 class="h5 mb-2">Sitios web profesionales</h3>
+                <p class="mb-3">
+                  Landings y webs institucionales modernas, con foco en
+                  claridad, velocidad y usabilidad para tus clientes.
+                </p>
+                <ul class="svk-list">
+                  <li>Diseño responsive</li>
+                  <li>Secciones a medida</li>
+                  <li>Optimización SEO básica</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+              <div class="svk-card h-100">
+                <h3 class="h5 mb-2">Tiendas online</h3>
+                <p class="mb-3">
+                  Catálogos, páginas de productos y flujos de compra pensados
+                  para que puedas gestionar tus ventas online.
+                </p>
+                <ul class="svk-list">
+                  <li>Catálogo administrable</li>
+                  <li>Carrito de compras (maquetado)</li>
+                  <li>Integración con WhatsApp</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+              <div class="svk-card h-100">
+                <h3 class="h5 mb-2">Sistemas & paneles</h3>
+                <p class="mb-3">
+                  Interfaces limpias para paneles de administración, gestión de
+                  productos y visualización de datos.
+                </p>
+                <ul class="svk-list">
+                  <li>Diseño de UI de dashboards</li>
+                  <li>Listados, tablas y filtros</li>
+                  <li>Focus en claridad y simplicidad</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECCIÓN: TECNOLOGÍAS (GRID CSS PROPIO) -->
+      <section
+        class="py-5 svk-section bg-success-subtle"
+        aria-label="Tecnologías y herramientas"
+      >
+        <div class="container">
+          <header class="text-center mb-4">
+            <h2 class="svk-section-title">Tecnologías que usamos</h2>
+            <p class="svk-section-subtitle">
+              Combinamos herramientas modernas para lograr sitios escalables y
+              fáciles de mantener.
+            </p>
+          </header>
+
+          <div class="svk-skills-grid" data-aos="fade-up">
+            <span class="svk-skill-tag">HTML5</span>
+            <span class="svk-skill-tag">CSS3</span>
+            <span class="svk-skill-tag">SASS</span>
+            <span class="svk-skill-tag">Bootstrap 5</span>
+            <span class="svk-skill-tag">JavaScript</span>
+            <span class="svk-skill-tag">Git & GitHub</span>
+            <span class="svk-skill-tag">Responsive Design</span>
+            <span class="svk-skill-tag">SEO básico</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECCIÓN: PROYECTOS DESTACADOS -->
+      <section class="py-5 svk-section" aria-label="Proyectos destacados">
+        <div class="container">
+          <header
+            class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3 mb-4"
+          >
+            <div>
+              <h2 class="svk-section-title mb-1">Algunos proyectos</h2>
+              <p class="svk-section-subtitle mb-0">
+                Una muestra de trabajos reales y maquetaciones que
+                desarrollamos.
+              </p>
+            </div>
+            <a href="portfolio.html" class="btn btn-outline-accent">
+              Ver todo el portfolio
+            </a>
+          </header>
+
+          <div class="row g-4">
+            <article class="col-md-4" data-aos="fade-up" data-aos-delay="0">
+              <div class="svk-project-card h-100">
+                <img
+                  src="assets/img/proyectos/captura tienda de componentes.png"
+                  alt="Captura de pantalla del proyecto MiTiendaPC"
+                  class="img-fluid mb-3"
+                />
+                <h3 class="h5">MiTiendaPC</h3>
+                <p class="svk-project-meta">Tienda de componentes de PC</p>
+                <p class="mb-3">
+                  Catálogo de productos, fichas de detalle, panel de
+                  administración y carrito de compras.
+                </p>
+              </div>
+            </article>
+
+            <article class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+              <div class="svk-project-card h-100">
+                <img
+                  src="assets/img/proyectos/captura-burgerboom.png"
+                  alt="Captura del sitio de Burger Boom"
+                  class="img-fluid mb-3"
+                />
+                <h3 class="h5">Burger Boom</h3>
+                <p class="svk-project-meta">Landing gastronómica</p>
+                <p class="mb-3">
+                  Sitio para hamburguesería con menú, promociones especiales y
+                  llamado a la acción por WhatsApp.
+                </p>
+              </div>
+            </article>
+
+            <article class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+              <div class="svk-project-card h-100">
+                <img
+                  src="assets/img/proyectos/caprtura-sistemadegestion.png"
+                  alt="Interfaz de sistema de gestión para kiosco"
+                  class="img-fluid mb-3"
+                />
+                <h3 class="h5">Sistema de gestión</h3>
+                <p class="svk-project-meta">Panel interno para kioscos</p>
+                <p class="mb-3">
+                  Interfaz para controlar stock, ventas y movimientos diarios en
+                  comercios pequeños.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA FINAL -->
+      <section
+        class="py-5 svk-section bg-success-subtle text-center"
+        aria-label="Llamado a la acción final"
+      >
+        <div class="container" data-aos="zoom-in">
+          <h2 class="svk-section-title mb-3">
+            ¿Listo para llevar tu proyecto al siguiente nivel?
+          </h2>
+          <p class="svk-section-subtitle mb-4">
+            Contame qué necesitás y armamos una propuesta a medida para tu marca
+            o emprendimiento.
+          </p>
+          <a href="contacto.html" class="btn btn-accent btn-lg">
+            Quiero hablar de mi proyecto
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="svk-footer py-4">
+      <div
+        class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3"
+      >
+        <p class="mb-0 small">
+          &copy; <span id="year"></span> SavateK Solutions — Desarrollado por
+          Valentín Arriola.
+        </p>
+        <nav aria-label="Redes sociales">
+          <ul class="list-inline mb-0 svk-footer-links">
+            <li class="list-inline-item">
+              <a
+                href="https://www.linkedin.com/in/valentin-arriola-53950a21a/"
+                class="text-decoration-none hover-accent text-light"
+                target="_blank"
+                ><i class="bi fs-4 bi-linkedin"></i
+              ></a>
+            </li>
+            <li class="list-inline-item">
+              <a
+                href="https://github.com/valentin2236"
+                class="text-decoration-none hover-accent text-light m-2"
+                target="_blank"
+                ><i class="bi fs-4 bi-github"></i
+              ></a>
+            </li>
+            <li class="list-inline-item">
+              <a
+                href="contacto.html"
+                class="text-decoration-none text-light hover-accent"
+                ><i class="bi fs-4 bi-envelope-fill"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      document.querySelector("#year").textContent = new Date().getFullYear();
+    </script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

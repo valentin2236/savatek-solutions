@@ -1,0 +1,24 @@
+@media (max-width: 992px) {
+  .svk-skills-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .svk-hero {
+    text-align: center;
+  }
+
+  .svk-hero-subtitle {
+    margin-inline: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .svk-skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .svk-card,
+  .svk-project-card {
+    padding: 1.1rem;
+  }
+}
